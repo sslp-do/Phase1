@@ -1,0 +1,89 @@
+.PageBackGround{
+
+    height: 300vh;
+    align-items: flex-start;
+}
+
+.glass{
+
+    height: 100%;
+
+    max-height: 1901px;
+
+    margin-top: 5%;
+
+
+}
+
+.navigation{
+    height: 5%;
+}
+
+
+.container{
+
+    height: 92%;
+
+}
+
+
+
+
+
+.mission , .cards div{
+
+    
+
+    background: rgba(122, 177, 102 , 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border:1px solid rgba(0, 0, 0, 0.29);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.34);
+
+
+}
+
+.mission , .cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.mission{
+    width: 70% ;
+    max-width: 721px;
+    margin: 113px auto ;
+    padding: 50px;
+    text-align: justify;
+
+}
+
+h1 , p {
+    padding-bottom: 25px;
+}
+
+.cards div{
+
+    width: 15%;
+    margin: 1% auto 10%; 
+    padding: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.cards img{
+    width: 50%;
+    padding: 10px;
+}
+
+.cards p{
+    margin-top: 5%;
+    font-size: 1em;
+}
+
+h1{
+    margin-left: 5%;
+}

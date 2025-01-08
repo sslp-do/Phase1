@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../CSS/BackGround.css">
+    <link rel="stylesheet" href="../CSS/HomePage.css">
+    <title>HomePage</title>
+   <script src="../JavaScript/Animation.js"></script>
+  
+    
+</head>
+
+<body>
+    <div class="PageBackGround">
+        <div class="glass">
+            <div class="container">
+                <div class="navigation">
+
+                    <a href="../HTML/HomePage.html"><img class="logo" src="../../images/TastyBitesLogo.png" alt=""></a>
+
+                    <div class="navList">
+                        <ul>
+                            <li><a href="../HTML/HomePage.html" style="text-decoration: underline;">Home</a></li>
+                            <li><a href="../HTML/AboutUs.html">About US</a></li>
+                            <li><a href="../HTML/Recipes.html">Recpies</a></li>
+                            <li><a href="../HTML/ContactUs.html">Contact Us</a></li>
+                            <li><a href="../HTML/Reviews.html">Reviews</a></li>
+                            <li><a href="../HTML/Library1.html">Library</a></li>
+
+                        </ul>
+                        <div><a href="../HTML/SignUp.html"><img class="signup" src="../../images/account.png"
+                                    alt="account"></a></div>
+                    </div>
+
+                </div>
+                <div class="maincontainer">
+                    <div class="description">
+                        <!--deleted "details" class , added margin-top to "button" class && justify-content: center to "description"-->
+                        <b id="title" oncontextmenu="">Recipe Name</b> <!--changed h2 to b and added required styling to it in HomePage.css-->
+                        <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur iste
+                            eligendi
+                            laborum nihil molestias quas iure facere sapiente optio voluptatem quaerat explicabo
+                            omnis, quos enim minima quod aut qui laboriosam? Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptate ex aut pariatur molestias ratione distinctio officia
+                            provident id, soluta unde, praesentium non. Porro quo dolor ut qui, obcaecati asperiores
+                            a.</p> <!--deleted text class-->
+                        <div>
+
+                            <button onmouseover="changeColor();"
+                             onmouseleave="resetColor();" id="button">
+                                <a href="../HTML/resipe_details.html">
+                                    Take me to Recipe
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div 
+                    style="height: 100%;align-items: center;align-content: center;">
+                        <img 
+                        id="image"
+                        alt="dish"
+                        style=" height: 400px; width: 380px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

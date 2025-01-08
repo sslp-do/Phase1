@@ -1,0 +1,79 @@
+
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; /*extra*/
+    height: 80%;
+
+   /* border: 1px solid black; */
+
+}
+
+b{
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+button {
+
+    /* font-family: "Inter", sans-serif; */
+    /* font-optical-sizing: auto; */
+
+    /* font-size: 99%; */
+    /* font-weight: 400; */
+
+    background-color: rgba(122, 177, 102, 0.7);
+    padding: 15px 20px;
+    border-radius: 25px;
+    border-width: 0;
+    margin-top: 30px;
+
+    width: 220px;/*extra*/
+    
+    font-weight: bold; /*extra*/
+    font-size: 1.25em;/*extra*/
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(122, 177, 102);/*extra*/
+
+}
+
+
+.description{
+    display: flex;
+     flex-direction:column ; 
+     justify-content:center; /*center instead of space-evenly*/
+      width: 50%;
+      height: 90%;
+     /* border: 1px solid brown; */
+
+      padding: 20px ; /*extra*/
+
+      max-width: 500px; /*extra*/
+      max-height: 350px; /*extra*/
+        margin-top: 5%;
+
+    }
+
+    .description p { /*extra*/
+        font-size: 1.4em;
+        margin: 10px 0 ;
+    }
+
+
+/*.details{
+    display: flex;
+     flex-direction: column;
+      justify-content: center;
+       height: 80%;         
+       border: 1px solid blue;
+    }*/
+/* .select_tab{
+    text-decoration: underline;
+}
+    selected_tab:hover{
+        text-decoration: none;
+    } */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../CSS/BackGround.css">
+    <link rel="stylesheet" href="../CSS/Recipes.css">
+
+    <title>Recipes</title>
+</head>
+
+<body>
+    <div class="PageBackGround">
+        <div class="glass">
+            <div class="container">
+                <div class="navigation">
+
+                    <a href="../HTML/HomePage.html"><img class="logo" src="../../images/TastyBitesLogo.png" alt=""></a>
+
+                    <div class="navList">
+                        <ul>
+                            <li><a href="../HTML/HomePage.html">Home</a></li>
+                            <li><a href="../HTML/AboutUs.html">About US</a></li>
+                            <li><a href="../HTML/Recipes.html" style="text-decoration: underline;">Recpies</a></li>
+                            <li><a href="../HTML/ContactUs.html">Contact Us</a></li>
+                            <li><a href="../HTML/Reviews.html">Reviews</a></li>
+                            <li><a href="../HTML/Library1.html" >Library</a></li>
+    
+                        </ul>
+                        <div>
+                            <a href="../HTML/SignUp.html">
+                                <img class="signup" src="../../images/account.png" alt="account">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="maincontainer">
+                    <div class="card">
+                        <div class="cardheader">
+
+                            <img src="../../images/Flags/Palstine flag.jpeg" alt="Palstine-Flag">
+                             <!--deleted the "cardimage" class-->
+
+                            <b>Palstine cuisine</b> 
+                            <!--<b></b> instead of the label (all required styling is in BackGround.css)-->
+                            <!--<b></b> increased the font size to 28px in Recpied.css-->
+
+                        </div>
+                        <div class="buttoncontainer">
+                           <!--changed label to b && delete class
+                                "shadow" instead put .buttoncomtainer b {}
+                                also added <a></a> for navigation--> 
+                            <button><a href= "../HTML/CountryRecipes.html">Breakfast</a></button>    
+                            <button><a href="../HTML/CountryRecipes.html">Lunch</a></button> 
+                            <button><a href="../HTML/CountryRecipes.html">Dinner</a></button>
+                            <button><a href="../HTML/CountryRecipes.html">Dessert</a></button>
+                        </div>
+
+                    </div>
+                 <!--   <div style="width: 2%; border: 1px solid black;"></div> -->
+                    <!--no need (I added margin-left: 2% to the "section" class)-->
+                    <div class="section">
+                     
+                            <b>Cuisines Around the World</b> <!--changed div contains h1 to b-->
+                        
+                        <div class="Circles">
+                            <a href="CountryRecipes.html">        
+                                <img  src="../../images/Flags/Palstine flag.jpeg" alt="">
+                            </a>
+                            <a href="CountryRecipes.html">                            
+                                <img  src="../../images/Flags/jo-flag.jpg" alt="">
+                            </a>
+                            <a href="CountryRecipes.html">                           
+                                 <img  src="../../images/Flags/sy flag.jpeg" alt="">
+                            </a>
+                            <a href="CountryRecipes.html">                            
+                                <img  src="../../images/Flags/lb-flag.jpg" alt="">
+                            </a>
+                            <a href="CountryRecipes.html">                            
+                                <img  src="../../images/Flags/yemen flag.png" alt="">
+                            </a>
+                            <a href="CountryRecipes.html">                            
+                                <img  src="../../images/Flags/iraq flag.jpg" alt="">
+                            </a>
+                            <!--I deleted "flags" class and replace it with ".allflags img" && put them in <a></a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

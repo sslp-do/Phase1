@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../CSS/BackGround.css">
+    <link rel="stylesheet" href="../css/Recipes.css">
+
+    <title>CountryRecipes</title>
+
+    <style>
+        button{
+            margin:auto;
+            width: 200px;
+        }
+
+        p{
+            margin-top: 5%;
+        }
+
+       
+        .cardTitle {
+            /* border: 1px solid black; */
+             display: flex;
+           flex-direction: column;
+            align-content: start;
+           /*  height: 100%; 
+            padding: 20px;  */
+            font-size: 0.95em;
+            
+        }
+
+        .cardTitle img{
+            width: 5em;
+            /* margin-left: -10px; */
+        }
+       
+        .section img{
+            margin-top: 3%;
+        }
+        .star-rating {
+              display: flex;
+              font-size: 2rem;
+              justify-content: center;
+              flex-direction: row-reverse;
+              /* border: 1px solid black; */
+              margin-top: -10px ;
+  
+
+    }
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating label {
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .star-rating input:checked ~ label,
+    .star-rating input:hover ~ label {
+      color: #f5b301;
+    }
+
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: #f5b301;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="PageBackGround">
+        <div class="glass">
+            <div class="container">
+                <div class="navigation">
+
+                    <a href="../HTML/HomePage.html"><img class="logo" src="../../images/TastyBitesLogo.png" alt=""></a>
+
+                    <div class="navList">
+                        <ul>
+                            <li><a href="../HTML/HomePage.html">Home</a></li>
+                            <li><a  href="../HTML/AboutUs.html">About US</a></li>
+                            <li><a href="../HTML/Recipes.html">Recpies</a></li>
+                            <li><a  href="../HTML/ContactUs.html">Contact Us</a></li>
+                            <li><a  href="../HTML/Reviews.html">Reviews</a></li>
+                            <li><a href="../HTML/Library1.html">Library</a></li>
+
+                        </ul>
+                        <div>
+                            <a href="../HTML/SignUp.html">
+                                <img class="signup" src="../../images/account.png" alt="account">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="maincontainer">
+                    <div class="card">
+                        <div class="cardheader">
+                            <img  src="../../images/Fettuccine.webp" alt="">
+                            <div class="cardTitle">
+                                <b>Fettuccine </b>                                
+                                <div class="star-rating">
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1">&#9733;</label>
+                                
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2">&#9733;</label>
+                                
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3">&#9733;</label>
+                                
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4">&#9733;</label>
+                                
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5">&#9733;</label>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <p style="font-style: italic; padding: 20px;">My favorite baked meatball recipe — it’s easy to make, full of great flavor, and
+                            incredibly versatile. Serve it with Italian marinara sauce, Swedish cream sauce,
+                            American bbq sauce and beyond!</p>
+                       
+                            <button><a href="../HTML/resipe_details.html">Go to Recpie</a></button>
+                        
+                    </div>
+                    <div class="section">
+                        <div>
+                            <b>Palestine's Lunch Table</b>
+                        </div>
+                        <div class="Circles">
+                            <a href="../HTML/resipe_details.html">
+                                <img  src="../../images/pizza.webp" alt="">
+                            </a>
+                            <a href="../HTML/resipe_details.html">
+                                <img  src="../../images/Fettuccine.webp" alt="">
+
+                            </a>
+                            <a href="../HTML/resipe_details.html">
+                                <img  src="../../images/burger.jpg" alt="">
+
+                            </a>
+                            <a href="../HTML/resipe_details.html">
+                                <img  src="../../images/Chicken.webp" alt="">
+
+                            </a>
+                            <a href="../HTML/resipe_details.html">
+                                <img  src="../../images/Salad.webp" alt="">
+
+                            </a>
+                            <a href="../HTML/resipe_details.html">
+                                <img  src="../../images/Shawerma.jpg" alt="">
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
