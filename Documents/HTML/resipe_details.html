@@ -10,69 +10,84 @@
     <link rel="stylesheet" href="../CSS/BackGround.css">
     <link rel="stylesheet" href="../css/Recipes.css">
 
+    <script src="../JavaScript/Animation.js"></script>
+
     <title>Recipe Details</title>
+
+    <style>
+        .non-editable-textarea {
+            width: 100%;
+            max-width: 800px;
+            height: 550px;
+            padding: 20px;
+            /* border: 1px dashed #000; */
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.01);
+            box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.34);
+            overflow-y: auto;
+            resize: none;
+            /* Prevent resizing */
+            color: #333;
+            margin: 20px 0;
+            font-size: 1.25em;
+        }
+
+
+
+        .section {
+
+            height: 115%;
+            margin-top: 5%;
+
+        }
+
+        .card button {
+            margin-left: 20px
+        }
+
+        .sectionH {
+            display: flex;
+            flex-direction: row;
+            height: 20%;
+            width: 100%;
+        }
+
+        .sectionH img {
+            width: 16%;
+            max-width: 20%;
+            height: auto;
+            border-radius: 50%;
+            margin: 0px 10px;
+        }
+
+        .sectionH h1 {
+            /* height:auto; */
+            align-content: center;
+            text-align: left;
+            margin: 15px 0px;
+            font-size: 2.5em;
+            /* width: auto; */
+        }
+
+        button {
+            margin-right: 20px;
+        }
+
+        #persons {
+            width: 100px;
+            height: 10px;
+            padding: 0px;
+            margin: 0px;
+            background-color: rgba(122, 177, 102, 0.107);
+            padding: 15px 20px;
+            border-radius: 25px;
+            border-width: 0;
+            border-color: black;
+            color: black;
+        }
+    </style>
 </head>
-<style>
-     .non-editable-textarea {
-      width: 100%;
-      max-width: 800px; 
-      height: 550px; 
-      padding: 20px;
-      /* border: 1px dashed #000; */
-      border-radius: 5px;
-      background-color: rgba(0 , 0 , 0 ,0.01);
-      box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.34);
-      overflow-y: auto;
-      resize: none; /* Prevent resizing */
-      color: #333;
-      margin: 20px 0 ;
-      font-size: 1.25em;
-    }
 
-  
-
-    .section {
-
-        height: 115%;
-        margin-top: 5%;
-
-    }
-
-    .card button{
-        margin-left: 20px
-    }
-
-    .sectionH {
-        display: flex;
-        flex-direction: row;
-        height: 20%;
-        width: 100%;
-    }
-
-    .sectionH img {
-        width: 16%;
-        max-width: 20%;
-        height: auto;
-        border-radius: 50%;
-        margin: 0px 10px;
-    }
-
-    .sectionH h1{
-        /* height:auto; */
-        align-content: center;
-        text-align: left;
-        margin: 15px 0px;
-        font-size: 2.5em;
-        /* width: auto; */
-    }
-
-    button{
-        margin-right: 20px;
-    }
-
-   
-
-</style>
 <body>
     <div class="PageBackGround">
         <div class="glass">
@@ -84,10 +99,10 @@
                     <div class="navList">
                         <ul>
                             <li><a href="../HTML/HomePage.html">Home</a></li>
-                            <li><a  href="../HTML/AboutUs.html">About US</a></li>
+                            <li><a href="../HTML/AboutUs.html">About US</a></li>
                             <li><a href="../HTML/Recipes.html">Recpies</a></li>
-                            <li><a  href="../HTML/ContactUs.html">Contact Us</a></li>
-                            <li><a  href="../HTML/Reviews.html">Reviews</a></li>
+                            <li><a href="../HTML/ContactUs.html">Contact Us</a></li>
+                            <li><a href="../HTML/Reviews.html">Reviews</a></li>
                             <li><a href="../HTML/Library1.html">Library</a></li>
 
                         </ul>
@@ -104,53 +119,81 @@
                         <div class="cardheader">
 
                             <img src="../../images/Flags/Palstine flag.jpeg" alt="Palstine-Flag">
-                             <!--deleted the "cardimage" class-->
+                            <!--deleted the "cardimage" class-->
 
-                            <b>Palstine cuisine</b> 
+                            <b>Palstine cuisine</b>
                             <!--<b></b> instead of the label (all required styling is in BackGround.css)-->
                             <!--<b></b> increased the font size to 28px in Recpied.css-->
 
                         </div>
                         <div class="buttoncontainer">
-                           <!--changed label to b && delete class
+                            <!--changed label to b && delete class
                                 "shadow" instead put .buttoncomtainer b {}
-                                also added <a></a> for navigation--> 
-                            <button><a href= "../HTML/CountryRecipes.html">Breakfast</a></button>    
-                            <button><a href="../HTML/CountryRecipes.html">Lunch</a></button> 
+                                also added <a></a> for navigation-->
+                            <button><a href="../HTML/CountryRecipes.html">Breakfast</a></button>
+                            <button><a href="../HTML/CountryRecipes.html">Lunch</a></button>
                             <button><a href="../HTML/CountryRecipes.html">Dinner</a></button>
                             <button><a href="../HTML/CountryRecipes.html">Dessert</a></button>
                         </div>
 
                     </div>
-                 
+
                     <div class="section">
-                        <div class="sectionH">
-                            <img src="../../images/Fettuccine.webp" alt="">
-                            <h1>Fettuccine</h1>
+                        <div class="sectionH" style="justify-content: space-between;">
+                            <div style="display: flex; flex-direction: row;">
+                                <img src="../../images/Fettuccine.webp" alt="">
+                                <h1>Fettuccine</h1>
+                            </div>
+                            <div
+                                style="text-align: center; margin: auto; padding-right: 20px;display: flex; flex-direction: row;">
+                                <input type="text" placeholder="for 2 Persons" style="text-align: center;" value=""
+                                    id="persons"> <span style="width: 5px;"></span>
+                                 <button onclick="ingredients()"
+                                    style="height: auto; width: auto; padding: 0px 20px; font-size: smaller;">Change</button>
+                            </div>
                         </div>
 
-                            <div class="non-editable-textarea">
-                                Elbow macaroni: This classic macaroni and cheese shape has ridges that let the sauce cling. That means they’ll deliver cheesy goodness with every bite. Check out our Test Kitchen’s favorite macaroni brands.
-                                Butter and flour: These ingredients come together to form a roux, a combination of fat and flour that’s used to thicken sauce.
-                                Milk: We use 2% milk for our cheese sauce. You can swap in whole milk or half-and-half cream to make the sauce even more decadent.
-                                Sharp cheddar cheese: If we had a secret ingredient in this recipe, it would be sharp cheddar cheese. It ages longer than regular cheddar, which gives it a bolder flavor. It adds complexity to humble down-home favorites like this oven-baked mac and cheese.
-                                Bread crumbs: Dry bread crumbs pair up with butter to make a decadent topping. If desired, you can add herbs and spices to make seasoned bread crumbs.
-                                <br><br>
-                                Step 1: Cook the macaroni
-                                Preheat the oven to 350°. Cook the macaroni according to package directions for al dente. Drain, and set aside.                                <br><br>
-                                <br><br>
-                                Step 2: Make the roux In a Dutch oven, heat 1/3 cup of the butter over medium heat. Add the onion, and saute until tender. Stir in the flour, ground mustard, salt and pepper until blended.
-                                <br><br>
-                                Step 3: Add the milk
+                        <div class="non-editable-textarea">
+                            Elbow macaroni: This classic macaroni and cheese shape has ridges that let the sauce cling.
+                            That means they’ll deliver cheesy goodness with every bite. Check out our Test Kitchen’s
+                            favorite macaroni brands. <br><br>
+                            <ul style="padding-left: 20px;">Ingerdients: <br>
+                                <li><span name="ingredients">100</span>g Butter</li>
+                                <li><span name="ingredients">400</span>g Flour</li>
+                                <li><span name="ingredients">100</span>ml Milk</li>
+                                <li><span name="ingredients">300</span>g Sharp cheddar cheese</li>
+                                <li><span name="ingredients">200</span>g Bread crumbs</li>
+                            </ul>
+                            <br>
+                            Butter and flour: These ingredients come together to form a roux, a combination of fat and
+                            flour that’s used to thicken sauce.
+                            Milk: We use 2% milk for our cheese sauce. You can swap in whole milk or half-and-half cream
+                            to make the sauce even more decadent.
+                            Sharp cheddar cheese: If we had a secret ingredient in this recipe, it would be sharp
+                            cheddar cheese. It ages longer than regular cheddar, which gives it a bolder flavor. It adds
+                            complexity to humble down-home favorites like this oven-baked mac and cheese.
+                            Bread crumbs: Dry bread crumbs pair up with butter to make a decadent topping. If desired,
+                            you can add herbs and spices to make seasoned bread crumbs.
+                            <br><br>
+                            Step 1: Cook the macaroni
+                            Preheat the oven to 350°. Cook the macaroni according to package directions for al dente.
+                            Drain, and set aside. <br><br>
+                            <br><br>
+                            Step 2: Make the roux In a Dutch oven, heat 1/3 cup of the butter over medium heat. Add the
+                            onion, and saute until tender. Stir in the flour, ground mustard, salt and pepper until
+                            blended.
+                            <br><br>
+                            Step 3: Add the milk
 
-                              </div>
+                        </div>
 
-                            <div>
-                                <button><a href="https://www.youtube.com/watch?v=IzLn0pXntNE" target="_blank">Tutorial</a></button>
-                                <button><a href="#">Rating</a></button>
-                            </div>
-                           
-                        
+                        <div>
+                            <button><a href="https://www.youtube.com/watch?v=IzLn0pXntNE"
+                                    target="_blank">Tutorial</a></button>
+                            <button><a href="#">Rating</a></button>
+                        </div>
+
+
                     </div>
                 </div>
 

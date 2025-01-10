@@ -10,9 +10,26 @@
     <link rel="stylesheet" href="../CSS/BackGround.css">
     <link rel="stylesheet" href="../CSS/HomePage.css">
     <title>HomePage</title>
-   <script src="../JavaScript/Animation.js"></script>
-  
-    
+    <script src="../JavaScript/Animation.js">  </script>
+    <!--   <style>
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #image {
+            animation: rotate 5s infinite linear;
+        }
+    </style> -->
+
+ 
+
+
 </head>
 
 <body>
@@ -41,7 +58,8 @@
                 <div class="maincontainer">
                     <div class="description">
                         <!--deleted "details" class , added margin-top to "button" class && justify-content: center to "description"-->
-                        <b id="title" oncontextmenu="">Recipe Name</b> <!--changed h2 to b and added required styling to it in HomePage.css-->
+                        <b id="title" oncontextmenu="">Recipe Name</b>
+                        <!--changed h2 to b and added required styling to it in HomePage.css-->
                         <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur iste
                             eligendi
                             laborum nihil molestias quas iure facere sapiente optio voluptatem quaerat explicabo
@@ -51,20 +69,15 @@
                             a.</p> <!--deleted text class-->
                         <div>
 
-                            <button onmouseover="changeColor();"
-                             onmouseleave="resetColor();" id="button">
+                            <button onmouseover="changeColor();" onmouseleave="resetColor();" id="button">
                                 <a href="../HTML/resipe_details.html">
                                     Take me to Recipe
                                 </a>
                             </button>
                         </div>
                     </div>
-                    <div 
-                    style="height: 100%;align-items: center;align-content: center;">
-                        <img 
-                        id="image"
-                        alt="dish"
-                        style=" height: 400px; width: 380px;">
+                    <div style="height: 100%;align-items: center;align-content: center;">
+                        <img id="image" alt="dish" style=" height: 400px; width: 380px;">
                     </div>
                 </div>
 

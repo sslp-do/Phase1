@@ -7,10 +7,10 @@ function resetColor() {
     document.getElementById("button").style.backgroundColor = "rgba(122, 177, 102, 0.7)";
 }
 
-const images = [ "../../images/hommos.png",
-   "../../images/chicken.png",
+const images = ["../../images/hommos.png",
+    "../../images/chicken.png",
     "../../images/curry chicken.png",
-     "../../images/egg plant.png",];
+    "../../images/egg plant.png",];
 const titles = [
     "Herb Hummus with Nuts",
     "Roasted Chicken",
@@ -46,4 +46,17 @@ function normalText() {
 }
 /////////////neeeewwwww
 
+function ingredients() {
 
+    const persons = document.getElementById("persons").value;
+    if (persons < 1) {
+        alert("Please enter a valid number of persons.");
+    } else {
+        const ingredients = document.getElementsByName("ingredients");
+        for (let i = 0; i < ingredients.length; i++) {
+            const ingredient = ingredients[i].innerHTML || 0;
+            ingredients[i].innerHTML = ingredient * (persons / 2);
+        }
+        alert("The ingredients have been adjusted for " + persons + " persons.");
+    }
+}
