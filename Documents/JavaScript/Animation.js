@@ -60,3 +60,8 @@ function ingredients() {
         alert("The ingredients have been adjusted for " + persons + " persons.");
     }
 }
+
+function fav_button() {
+    document.getElementById("fav").style.backgroundColor = "rgba(101, 252, 0, 0.377)";
+    document.getElementById("fav").innerHTML = " <img src='/images/done.svg'; height=20px >  Added!"
+}

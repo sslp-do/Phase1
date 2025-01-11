@@ -73,6 +73,7 @@
             margin-right: 20px;
         }
 
+
         #persons {
             width: 100px;
             height: 10px;
@@ -148,7 +149,7 @@
                                 style="text-align: center; margin: auto; padding-right: 20px;display: flex; flex-direction: row;">
                                 <input type="text" placeholder="for 2 Persons" style="text-align: center;" value=""
                                     id="persons"> <span style="width: 5px;"></span>
-                                 <button onclick="ingredients()"
+                                <button onclick="ingredients()"
                                     style="height: auto; width: auto; padding: 0px 20px; font-size: smaller;">Change</button>
                             </div>
                         </div>
@@ -191,6 +192,11 @@
                             <button><a href="https://www.youtube.com/watch?v=IzLn0pXntNE"
                                     target="_blank">Tutorial</a></button>
                             <button><a href="#">Rating</a></button>
+
+                            <button id="fav" onclick="fav_button()" style="align-items: baseline; background-color: rgba(122, 177, 102, 0.8);">
+                                <img src="/images/add_icon.svg" ; height=15px>
+                                Favourite
+                            </button>
                         </div>
 
 
