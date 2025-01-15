@@ -35,7 +35,7 @@ setInterval(() => {
     const imgElement = document.getElementById('image');
 
     imgElement.src = images[currentIndex];
-}, 3000);
+}, 10000);
 
 function linkText() {
     document.getElementById("title").style.color = "rgba(122, 177, 102, 0.7)";
@@ -60,8 +60,45 @@ function ingredients() {
         alert("The ingredients have been adjusted for " + persons + " persons.");
     }
 }
+var fav = false
+var fav_list = [];
+var chosen_res;
 
-function fav_button() {
+function store_res() {
+    chosen_res = document.getElementById("title").textContent;
+    console.log(chosen_res);
+}
+
+function click_fav_button() {
     document.getElementById("fav").style.backgroundColor = "rgba(101, 252, 0, 0.377)";
     document.getElementById("fav").innerHTML = " <img src='/images/done.svg'; height=20px >  Added!"
+    fav = true
+    fav_list.push(chosen_res);
+}
+function reset_fav_button() {
+
+    document.getElementById("fav").style.backgroundColor = "rgba(122, 177, 102, 0.7)";
+    document.getElementById("fav").innerHTML = "<img src='/images/add_icon.svg' alt='add' height=15px>Favourite";
+    fav = false
+    fav_list.pop(chosen_res);
+}
+function change_fav_button() {
+    if (fav) {
+        reset_fav_button();
+    } else {
+        click_fav_button();
+    }
+}
+
+function show_fav() {
+
+    let index = 0;
+    if (fav_list.length == index){}
+    else {
+        if (fav_list.length == 0) {
+            alert("You have no favourite recipes yet.")
+        } else {
+            document.getElementById("cardTitle").innerHTML= fav_list[index];
+        }
+    }
 }
