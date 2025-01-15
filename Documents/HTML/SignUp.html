@@ -31,6 +31,8 @@
                         <li><a href="../HTML/Reviews.html">Reviews</a></li>
                         <li><a href="../HTML/Library1.html" >Library</a></li>
 
+                        <li><a href="../HTML/calculateYourCalories.html" >calories</a></li>
+
                     </ul>
                     <div><a  href="../HTML/SignUp.html"><img class="signup effect"  src="../../images/account.png" alt="account"></a></div>
                 </div>
@@ -47,28 +49,78 @@
 
                     <legend><h1>SignUp</h1></legend>
                                 
-                                <p>Username</p>
+                                <label for="username">                                <p>Username</p>
+                                </label>
+
                                 <input type="text" id="username" name="username">
-                                <p>Email</p>
+                                
+                                <label for="email">                                <p>Email</p>
+                                </label>
+
                                 <input type="email" id="email" name="email">
-                                <p>Password</p>
+                                
+
+                                <label for="password"><p>Password</p></label>
                                 <input type="password" id="password" name="password">                      
 
-                            <button type="submit">Signup</button>
+                            <button type="button" onclick = "validate();">Signup</button>
                     </form>  
 
 
            </fieldset>
 
         </div>
-                
-
-
-
-
+            
 
         </div>
         </div>
+
     </div>
+
+    <script>
+
+        var username ;
+        var email ;
+        var password ;
+ 
+
+      function validate(){
+
+        username = document.getElementById("username").value;
+        email = document.getElementById("email").value;
+        password = document.getElementById("password").value;
+     
+
+        document.getElementById("username").style = "border: 1px solid black";
+        document.getElementById("email").style = "border: 1px solid black";
+        document.getElementById("password").style = "border: 1px solid black";
+
+      
+        if(username === "" || username.length < 3){
+          document.getElementById("username").style = "border: 3px solid red";
+          return false;
+        }else{
+          document.getElementById("username").style = "border: 3px solid green";
+
+        }
+        if(email === "" || email.indexOf("@") === -1 || email.indexOf(".") === -1){
+          document.getElementById("email").style = "border: 3px solid red";
+          return false;
+        }else{
+          document.getElementById("email").style = "border: 3px solid green";
+
+        }
+        if(password === "" || password.length < 6){
+          document.getElementById("password").style = "border: 3px solid red";
+          return false;
+        }else{
+          document.getElementById("password").style = "border: 3px solid green";
+
+        }
+
+        return true;
+    }
+
+    </script>
 </body>
 </html>

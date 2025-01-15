@@ -9,9 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+     <!-- Bootstrap css and javascript added here in the head -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../CSS/BackGround.css">
+
+    <link rel="stylesheet" href="../CSS/bootstrapMonitor.css">
     <title>Contact Us</title>
     <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
         .contactUs{
     margin-top: 160px;
     margin-left: 40px;
@@ -57,25 +69,32 @@ p{
                         <li><a href="../HTML/Reviews.html">Reviews</a></li>
                         <li><a href="../HTML/Library1.html" >Library</a></li>
 
+                        <li><a href="../HTML/calculateYourCalories.html" >calories</a></li>
+
                     </ul>
                     <div><a href="../HTML/SignUp.html"><img class="signup" src="../../images/account.png" alt="account"></a></div>
                 </div>
 
             </div>
-            <div class="contactUs">
-                <h1 style="font-size: 4em;">Contact Us</h1>
-                <p> <img class = "contact" src="../../images/email.png" alt="email">
-                    TastyBites2024@gmail.com <br>
-                    <img class = "contact" src="../../images/telephone.png" alt="telephone">
-                    Tel: +962911111111
-                </p>
-                <h1>Follow Us!</h1>
+            <div class="row contactUs">
+                <div class="col-lg-6">
+                    <h1 style="font-size: 4em;">Contact Us</h1>
+                    <p> <img class = "contact" src="../../images/email.png" alt="email">
+                        TastyBites2024@gmail.com <br>
+                        <img class = "contact" src="../../images/telephone.png" alt="telephone">
+                        Tel: +962911111111
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Follow Us!</h1>
 
                 <div class="socialMedia">
                     <a href="#"><img src="../../images/facebook.png" alt="facebook"></a>
                     <a href="#"><img src="../../images/instagram.png" alt="instagram"></a>
                     <a href="#"><img src="../../images/twitter.png" alt="twitter"></a>
                 </div>
+                </div>
+                
                 
 
             </div>

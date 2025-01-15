@@ -63,15 +63,12 @@
       transition: color 0.3s ease;
     }
 
-    .star-rating input:checked ~ label,
-    .star-rating input:hover ~ label {
+    .star-rating input:checked ~ label
+     {
       color: #f5b301;
     }
 
-    .star-rating label:hover,
-    .star-rating label:hover ~ label {
-      color: #f5b301;
-    }
+
 
     </style>
 </head>
@@ -93,6 +90,8 @@
                             <li><a  href="../HTML/Reviews.html">Reviews</a></li>
                             <li><a href="../HTML/Library1.html">Library</a></li>
 
+                            <li><a href="../HTML/calculateYourCalories.html" >calories</a></li>
+                            
                         </ul>
                         <div>
                             <a href="../HTML/SignUp.html">
@@ -109,19 +108,19 @@
                             <div class="cardTitle">
                                 <b>Fettuccine </b>                                
                                 <div class="star-rating">
-                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <input type="radio" id="star1" name="rating" value="1" disabled >
                                     <label for="star1">&#9733;</label>
                                 
-                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <input type="radio" id="star2" name="rating" value="2" checked disabled>
                                     <label for="star2">&#9733;</label>
                                 
-                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <input type="radio" id="star3" name="rating" value="3" disabled>
                                     <label for="star3">&#9733;</label>
                                 
-                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <input type="radio" id="star4" name="rating" value="4" disabled>
                                     <label for="star4">&#9733;</label>
                                 
-                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <input type="radio" id="star5" name="rating" value="5" disabled>
                                     <label for="star5">&#9733;</label>
                                   </div>
                             </div>

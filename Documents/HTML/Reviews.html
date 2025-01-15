@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/BackGround.css">
-    <link rel="stylesheet" href="../CSS/Reviews.css">
     <title>Reviews</title>
     <style>
         .reviews_resturant , .reviews_resturant2 , .reviews_resturant3{
@@ -49,6 +48,7 @@
 
         .quotation{
             max-width: 600px;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -69,6 +69,8 @@
                         <li><a href="../HTML/Reviews.html" style="text-decoration: underline;">Reviews</a></li>
                         <li><a href="../HTML/Library1.html" >Library</a></li>
 
+                        <li><a href="../HTML/calculateYourCalories.html" >calories</a></li>
+
                     </ul>
                     <div><a href="../HTML/SignUp.html"><img class="signup" src="../../images/account.png" alt="account"></a></div>
                 </div>
@@ -77,37 +79,148 @@
             </div>
 
             
+            <div class="row">
+                <div class="col-md-6 col-lg-12 ">
+                    <div class="row">
+                        <div class="col">
+                            <div class = "reviews_resturant">
+                                <h1>Reviews</h1>
+                                <img src="../../images/restaurant.png" alt="restaurant">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class = "reviews_resturant2">
+                                <img src="../../images/left-arrow.png" alt="left-arrow" onclick = "changeReview('previous');">
+                                <img id = "reviews" src="../../images/male-reviews.png" alt="reviews" style = "width: 15%;">
+                                <img src="../../images/right-arrow.png" alt="right-arrow" onclick = "changeReview('next');">
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
 
-            <div class = "reviews_resturant">
-                <h1>Reviews</h1>
-                <img src="../../images/restaurant.png" alt="restaurant">
+                
+                <div class=" col-md-6 col-lg-12">
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="reviews_resturant3">
+                                <img src="../../images/left-quote.png" alt="left-quote" >
+                                <p id = "name">Jake M.</p>
+                                <img src="../../images/right-quote.png" alt="right-quote" >
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="reviews_resturant">
+                                <p class = "quotation" id = "quotation">I’ve never been confident in baking, but TastyBites has completely changed that! The dessert recipes are foolproof, and I appreciate the detailed tips for getting perfect results. My friends couldn’t believe I made the chocolate cake myself—it’s that good!</p>
+                               </div>
+                        </div>
+                    </div>
+                    
+                       
+                </div>
+
             </div>
 
-            <div class = "reviews_resturant2">
-                <img src="../../images/left-arrow.png" alt="left-arrow">
-                <img id = "reviews" src="../../images/reviews.png" alt="reviews">
-                <img src="../../images/right-arrow.png" alt="right-arrow">
-            </div>
-
-            <div class="reviews_resturant3">
-                <img src="../../images/left-quote.png" alt="left-quote" >
-                <p>Visitor Name</p>
-                <img src="../../images/right-quote.png" alt="right-quote" >
             </div>
             
-               <div class="reviews_resturant">
-                <p class = "quotation">Lorem ipsum dolor sit amet consectetur. 
-                    Eget ridiculus lectus lectus scelerisque
-                    est nibh mi eu. Aenean ornare est vitae
-                    dignissim placerat. Scelerisque nunc 
-                    enim cursus mi aliquam gravida</p>
-               </div>
+
+           
+
+            
             
                
 
             </div>
         </div>
         </div>
-    </div>
+
+    <script>
+
+        
+
+        var review1 = {
+            name: "Jake M.",
+            review: "I’ve never been confident in baking, but TastyBites has completely changed that! The dessert recipes are foolproof, and I appreciate the detailed tips for getting perfect results. My friends couldn’t believe I made the chocolate cake myself—it’s that good!",
+            gender : 'male'
+        }
+
+        var review2 = {
+            name: "Sophia L.",
+            review: "TastyBites is a lifesaver for busy evenings! The step-by-step instructions are so easy to follow, and the ingredient lists are clear and concise. I especially love the 'Quick Recipes' section—it has helped me whip up delicious meals in under 30 minutes multiple times. Keep up the great work!",
+            gender: 'female'
+        }
+
+        var review3 = {
+            name: "Marcus D.",
+            review: "TastyBites is my go-to for experimenting with new recipes. The advanced options are fantastic for learning new techniques, and the plating suggestions are such a nice touch. As someone who’s working towards becoming a professional chef, this site has been an amazing resource!",
+            gender: 'male'
+        }
+
+        var review4 = {
+            name: "Emily R." ,
+            review: "TastyBites has completely redefined how I find recipes online! The site is sleek and easy to navigate, and the variety of recipes is impressive. The high-quality photos and clear instructions make cooking fun and stress-free. My homemade pasta turned out amazing—thank you, TastyBites!",
+            gender: 'female' 
+        }
+
+       
+
+        var reviews = [review1,review2, review3, review4 ];
+        var currentReview = 0;
+
+        function changeThePfp(){
+            if (reviews[currentReview].gender === 'female' ){
+                    document.getElementById("reviews").src = "../../images/female-reviews.png";
+                    // console.log('female');
+                }else{
+                    document.getElementById("reviews").src = "../../images/male-reviews.png";
+                    // console.log('male');
+                    }
+
+        }
+        function changeReview(direction){
+            // console.log(direction);
+            // console.log(currentReview);
+
+            if (direction === "previous"){
+                if (currentReview === 0){
+                    currentReview = reviews.length - 1;
+                }
+                else{
+                    currentReview--;
+                }
+
+                // change the picture
+                changeThePfp();
+                
+
+            }
+            else if (direction === "next"){
+                if (currentReview === reviews.length - 1){
+                    currentReview = 0;
+                }
+                else{
+                    currentReview++;
+                }
+
+                // change the picture
+                changeThePfp();
+                
+
+            }
+
+            document.getElementById("name").innerHTML = reviews[currentReview].name;
+
+            document.getElementById("quotation").innerHTML = reviews[currentReview].review;
+
+        }
+    </script>
 </body>
 </html>

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0056)http://127.0.0.1:5501/Documents/HTML/resipe_details.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="./Recipe Details_files/css2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
 
     <!-- Bootstrap css and javascript added here in the head -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./Recipe Details_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer="" src="./Recipe Details_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../CSS/BackGround.css">
-    <link rel="stylesheet" href="../css/Recipes.css">
+    <link rel="stylesheet" href="./Recipe Details_files/BackGround.css">
+    <link rel="stylesheet" href="./Recipe Details_files/Recipes.css">
 
     <!-- <script src="../JavaScript/Animation.js"></script> -->
-    <!-- extract fav_button() and ingrdients() and deleted the Animation.js link method -->
+    <!-- extract fav_button() and deleted the Animation.js link method -->
 
     <title>Recipe Details</title>
 
@@ -31,7 +30,7 @@
 
         .no-bootstrap {
             all: unset;
-            display: inline-block; 
+            display: inline-block; /* Ensure the input behaves correctly */
         }
 
         .star-rating, .star-rating-non-editable {
@@ -141,30 +140,29 @@
     </style>
 </head>
 
-<body>
+<body class="modal-open" style="overflow: hidden; padding-right: 0px;">
     <div class="PageBackGround">
-        <!-- added the #glass id to the glass div -->
-        <div class="glass" id = "glass">
+        <div class="glass">
             <div class="container">
                 <div class="navigation">
 
-                    <a href="../HTML/HomePage.html"><img class="logo" src="../../images/TastyBitesLogo.png" alt=""></a>
+                    <a href="http://127.0.0.1:5501/Documents/HTML/HomePage.html"><img class="logo" src="./Recipe Details_files/TastyBitesLogo.png" alt=""></a>
 
                     <div class="navList">
                         <ul>
-                            <li><a href="../HTML/HomePage.html">Home</a></li>
-                            <li><a href="../HTML/AboutUs.html">About US</a></li>
-                            <li><a href="../HTML/Recipes.html">Recpies</a></li>
-                            <li><a href="../HTML/ContactUs.html">Contact Us</a></li>
-                            <li><a href="../HTML/Reviews.html">Reviews</a></li>
-                            <li><a href="../HTML/Library1.html">Library</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/HomePage.html">Home</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/AboutUs.html">About US</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/Recipes.html">Recpies</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/ContactUs.html">Contact Us</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/Reviews.html">Reviews</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/Library1.html">Library</a></li>
                             
-                            <li><a href="../HTML/calculateYourCalories.html" >calories</a></li>
+                            <li><a href="http://127.0.0.1:5501/Documents/HTML/calculateYourCalories.html">calories</a></li>
 
                         </ul>
                         <div>
-                            <a href="../HTML/SignUp.html">
-                                <img class="signup" src="../../images/account.png" alt="account">
+                            <a href="http://127.0.0.1:5501/Documents/HTML/SignUp.html">
+                                <img class="signup" src="./Recipe Details_files/account.png" alt="account">
                             </a>
                         </div>
                     </div>
@@ -175,16 +173,23 @@
                         <div class="cardheader">
 
                            <!-- added  p-0 to both the picture and both m-0 p-0 to the title -->
-                           <img src="../../images/Flags/Palstine flag.jpeg" alt="Palstine-Flag" class=" p-0">
+                           <img src="./Recipe Details_files/Palstine flag.jpeg" alt="Palstine-Flag" class=" p-0">
+                           <!--deleted the "cardimage" class-->
 
                            <b class="m-0 p-0">Palstine cuisine</b>
 
+                            <!--<b></b> instead of the label (all required styling is in BackGround.css)-->
+                            <!--<b></b> increased the font size to 28px in Recpied.css-->
+
                         </div>
                         <div class="buttoncontainer">
-                            <button><a href="../HTML/CountryRecipes.html">Breakfast</a></button>
-                            <button><a href="../HTML/CountryRecipes.html">Lunch</a></button>
-                            <button><a href="../HTML/CountryRecipes.html">Dinner</a></button>
-                            <button><a href="../HTML/CountryRecipes.html">Dessert</a></button>
+                            <!--changed label to b && delete class
+                                "shadow" instead put .buttoncomtainer b {}
+                                also added <a></a> for navigation-->
+                            <button><a href="http://127.0.0.1:5501/Documents/HTML/CountryRecipes.html">Breakfast</a></button>
+                            <button><a href="http://127.0.0.1:5501/Documents/HTML/CountryRecipes.html">Lunch</a></button>
+                            <button><a href="http://127.0.0.1:5501/Documents/HTML/CountryRecipes.html">Dinner</a></button>
+                            <button><a href="http://127.0.0.1:5501/Documents/HTML/CountryRecipes.html">Dessert</a></button>
                         </div>
 
                     </div>
@@ -192,34 +197,31 @@
                     <div class="section">
                         <div class="sectionH" style="justify-content: space-between;">
                             <div style="display: flex; flex-direction: row;">
-                                <img src="../../images/Fettuccine.webp" alt="">
+                                <img src="./Recipe Details_files/Fettuccine.webp" alt="">
                                 <h1>Fettuccine</h1>
                             </div>
-                            <div
-                                style="text-align: center; margin: auto; padding-right: 20px;display: flex; flex-direction: row;">
+                            <div style="text-align: center; margin: auto; padding-right: 20px;display: flex; flex-direction: row;">
                                 <!-- added class no-bootstrap to input field -->
-                                <input type="text" placeholder="for 2 Persons" style="text-align: center;" value=""
-                                    id="persons" class="no-bootstrap"> <span style="width: 5px;"></span>
-                                <button onclick="ingredients()"
-                                    style="height: auto; width: auto; padding: 0px 20px; font-size: smaller;">Change</button>
+                                <input type="text" placeholder="for 2 Persons" style="text-align: center;" value="" id="persons" class="no-bootstrap"> <span style="width: 5px;"></span>
+                                <button onclick="ingredients()" style="height: auto; width: auto; padding: 0px 20px; font-size: smaller;">Change</button>
                             </div>
                         </div>
                         <!-- The rating result will be displayed here -->
                         <div class="star-rating-non-editable">
-                            <input type="checkbox" id="star1-result" name="rating-result" value="5" disabled >
-                            <label for="star1-result">&#9733;</label>
+                            <input type="checkbox" id="star1-result" name="rating-result" value="5" disabled="">
+                            <label for="star1-result">★</label>
 
-                            <input type="checkbox" id="star2-result" name="rating-result" value="4" disabled>
-                            <label for="star2-result">&#9733;</label>
+                            <input type="checkbox" id="star2-result" name="rating-result" value="4" disabled="">
+                            <label for="star2-result">★</label>
 
-                            <input type="checkbox" id="star3-result" name="rating-result" value="3" disabled >
-                            <label for="star3-result">&#9733;</label>
+                            <input type="checkbox" id="star3-result" name="rating-result" value="3" disabled="">
+                            <label for="star3-result">★</label>
 
-                            <input type="checkbox" id="star4-result" name="rating-result" value="2" disabled >
-                            <label for="star4-result">&#9733;</label>
+                            <input type="checkbox" id="star4-result" name="rating-result" value="2" disabled="">
+                            <label for="star4-result">★</label>
 
-                            <input type="checkbox" id="star5-result" name="rating-result" value="1" disabled  >
-                            <label for="star5-result">&#9733;</label>
+                            <input type="checkbox" id="star5-result" name="rating-result" value="1" disabled="">
+                            <label for="star5-result">★</label>
 
                         </div>
 
@@ -244,7 +246,7 @@
                             cheddar cheese. It ages longer than regular cheddar, which gives it a bolder flavor. It adds
                             complexity to humble down-home favorites like this oven-baked mac and cheese.
                             Bread crumbs: Dry bread crumbs pair up with butter to make a decadent topping. If desired,
-                            you can add herbs and spices to make seasoned bread crumbs.
+                            you can add herbs and spices to make seasoned&nbsp;bread&nbsp;crumbs.
                             <br><br>
                             Step 1: Cook the macaroni
                             Preheat the oven to 350°. Cook the macaroni according to package directions for al dente.
@@ -259,13 +261,12 @@
                         </div>
 
                         <div>
-                            <button><a href="https://www.youtube.com/watch?v=IzLn0pXntNE"
-                                    target="_blank">Tutorial</a></button>
+                            <button><a href="https://www.youtube.com/watch?v=IzLn0pXntNE" target="_blank">Tutorial</a></button>
 
                             <!-- working on the rating modal - the start -->
-                             <button type = "button" data-bs-toggle = "modal" data-bs-target = "#rate" onclick = "blurOff();">Rating</button>
+                             <button type="button" data-bs-toggle="modal" data-bs-target="#rate" onclick="blurOff();">Rating</button>
                             
-                            <div class = "modal fade" id = "rate" data-bs-backdrop = "true" data-bs-keyboard = "true" >
+                            <div class="modal fade show" id="rate" data-bs-backdrop="true" data-bs-keyboard="true" aria-modal="true" role="dialog" style="display: block;">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -278,25 +279,25 @@
 
                                             <div class="star-rating">
                                                 <input type="radio" id="star1" name="rating" value="5">
-                                                <label for="star1">&#9733;</label>
+                                                <label for="star1">★</label>
                                             
                                                 <input type="radio" id="star2" name="rating" value="4">
-                                                <label for="star2">&#9733;</label>
+                                                <label for="star2">★</label>
                                             
                                                 <input type="radio" id="star3" name="rating" value="3">
-                                                <label for="star3">&#9733;</label>
+                                                <label for="star3">★</label>
                                             
                                                 <input type="radio" id="star4" name="rating" value="2">
-                                                <label for="star4">&#9733;</label>
+                                                <label for="star4">★</label>
                                             
                                                 <input type="radio" id="star5" name="rating" value="1">
-                                                <label for="star5">&#9733;</label>
+                                                <label for="star5">★</label>
                                               </div>
 
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="blurOn();">Close</button>
-                                            <button type="button" class="btn btn-primary" onclick = "setRating();">Save changes</button>
+                                            <button type="button" class="btn btn-primary" onclick="setRating();">Save changes</button>
                                         </div>
                                 </div>
 
@@ -309,7 +310,7 @@
                         <!-- working on the rating modal - the end -->
 
                             <button id="fav" onclick="fav_button()" style="align-items: baseline; background-color: rgba(122, 177, 102, 0.8);">
-                                <img src="/images/add_icon.svg" ; height=15px>
+                                <img src="./Recipe Details_files/add_icon.svg" ;="" height="15px">
                                 Favourite
                             </button>
                         </div>
@@ -326,20 +327,6 @@
         function fav_button() {
             document.getElementById("fav").style.backgroundColor = "rgba(101, 252, 0, 0.377)";
             document.getElementById("fav").innerHTML = " <img src='/images/done.svg'; height=20px >  Added!"
-        }
-        function ingredients() {
-
-            const persons = document.getElementById("persons").value;
-            if (persons < 1) {
-                alert("Please enter a valid number of persons.");
-            } else {
-                const ingredients = document.getElementsByName("ingredients");
-                for (let i = 0; i < ingredients.length; i++) {
-                    const ingredient = ingredients[i].innerHTML || 0;
-                    ingredients[i].innerHTML = ingredient * (persons / 2);
-                }
-                alert("The ingredients have been adjusted for " + persons + " persons.");
-            }
         }
 
         function blurOff(){
@@ -385,8 +372,49 @@
 
         }
             
+        
+         
+    
     </script>
 
-</body>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+
+<div class="modal-backdrop fade show"></div></body></html>
